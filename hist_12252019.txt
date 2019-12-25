@@ -1,0 +1,90 @@
+    1  clear
+    2  sudo su -
+    3  mkdir -p $HOME/.kube
+    4  sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+    5  sudo chown $(id -u):$(id -g) $HOME/.kube/config
+    6  kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+    7  clear
+    8  kubeadm get nodes
+    9  kubeadm 
+   10  kubeadm join 10.128.0.12:6443 --token zw81im.hibubc0vl8ji3vk3 \
+   11  kubectl get nodes
+   12  clear
+   13  kubectl get nodes
+   14  systemctl enable docker.service
+   15  sudo systemctl enable docker.service
+   16  kubectl get nodes
+   17  clear
+   18  kubectl 
+   19  kubectl explain 
+   20  kubectl explain describe
+   21  kubectl explain 
+   22  kubectl api-resources
+   23  kubectl explain namespaces
+   24  kubectl explain pods
+   25  kubectl cluster-info
+   26  kubectl cluster-info dump
+   27  kubectl namespaces
+   28  kubectl get all
+   29  kubectl list
+   30  kubectl get
+   31  kubectl get -h
+   32  kubectl get -A
+   33  clear
+   34  git clone https://github.com/palanisu/kubernetes.git
+   35  sudo yum install git
+   36  clear
+   37  git clone https://github.com/palanisu/kubernetes.git
+   38  ls
+   39  cd kubernetes/
+   40  ls -l
+   41  clear
+   42  vim namespace.yaml
+   43  cd 
+   44  vim .vimrc
+   45  source .vimrc 
+   46  sudo yum install autocmd
+   47  vim .vimrc
+   48  source .vimrc 
+   49  vim .vimrc
+   50  source .vimrc 
+   51  vim .vimrc
+   52  source .vimrc 
+   53  vim .vimrc 
+   54  source .vimrc 
+   55  clear
+   56  cd kubernetes/
+   57  vim namespace.yaml 
+   58  clear
+   59  kubectl get namespace
+   60  kubectl apply -f namespace.yaml 
+   61  kubectl get namespace
+   62  kubectl get pods -n default
+   63  kubectl get pods -n uatapp1
+   64  clear
+   65  ls
+   66  vim ~/.vimrc 
+   67  source /home/palani_ec/.vimrc
+   68  clear
+   69  vim first_pod.yml
+   70  kubectl apply -f first_pod.yml -n devapp1
+   71  vim first_pod.yml 
+   72  kubectl apply -f first_pod.yml -n devapp1
+   73  kubectl get pods
+   74  kubectl get pods -n devapp1
+   75  kubectl get pods -n devapp1 -o wide
+   76  curl -i 10.36.0.1
+   77  curl -i 10.128.0.13
+   78* curl -i :80
+   79  curl -i 10.128.0.14
+   80  ping 10.128.0.14
+   81  kubectl get  pods -l env=production -n devapp1
+   82  kubectl get  pod -l env=production -n devapp1
+   83  kubectl get  pod -n devapp1
+   84  cat first_pod.yml 
+   85  kubectl get  pod -n devapp1 --list-labels
+   86  kubectl get --help
+   87  kubectl get  pod -n devapp1 --show-labels
+   88  kubectl get  pod -n devapp1 --show-labels -o wide
+   89  git status
+   90  history > hist_12252019.txt
